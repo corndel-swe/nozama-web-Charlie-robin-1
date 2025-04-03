@@ -1,0 +1,84 @@
+@use "variables" as *;
+
+.header {
+  background-color: $background-primary;
+  padding: $padding-base;
+
+  &__title {
+    color: $headline;
+    text-align: center;
+    font-size: $font-size-large;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    padding: $padding-large;
+    height: 10vh;
+
+    &__title {
+      margin-right: $margin-xlarge;
+    }
+  }
+}
+
+.recommended {
+  min-height: 100vh;
+  padding: $padding-large;
+  background-color: $background-secondary;
+
+  &__content {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: $margin-large;
+  }
+
+  &__title {
+    grid-column: 1/ -1;
+    font-size: $font-size-large;
+  }
+
+  @media (min-width: 768px) {
+    &__content {
+      display: grid;
+      gap: $margin-xlarge;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__title {
+      grid-column: 1/ -1;
+      font-size: $font-size-xlarge;
+    }
+  }
+}
+
+.faq-container {
+  min-height: 50vh;
+  padding: $padding-large;
+
+  .faq-container__content {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: $margin-large;
+  }
+
+  &__title {
+    font-size: $font-size-large;
+  }
+
+  @media (min-width: 768px) {
+    .faq-container__content {
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: $margin-xlarge;
+    }
+    &__title {
+      font-size: $font-size-xlarge;
+      grid-column: 1/ -1;
+    }
+  }
+}
