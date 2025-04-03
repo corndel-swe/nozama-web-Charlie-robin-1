@@ -23,6 +23,19 @@
   }
 }
 
+.theme-toggle {
+  background-color: $button;
+  border: 2px solid $button;
+  color: $button-text;
+  padding: $padding-base;
+  border-radius: $border-radius;
+  margin-left: auto;
+
+  &:focus {
+    border: 2px solid $button-text;
+  }
+}
+
 .product {
   background-color: $background-primary;
   padding: $padding-large;
