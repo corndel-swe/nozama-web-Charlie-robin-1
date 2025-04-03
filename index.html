@@ -1,160 +1,159 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inconsistent Product Page</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./src/styles/main.scss" />
+    <script src="./src/main.js" async defer></script>
   </head>
   <body>
-    <header>
-      <div>Nozama</div>
+    <header class="header">
+      <p class="header__title">Nozama</p>
+      <nav class="navigation">
+        <a class="navigation__item" href="/electronics">Electronics</a>
+        <a class="navigation__item" href="/jewellery"> Jewellery</a>
+        <a class="navigation__item navigation__item--current" href="/clothing"
+          >Clothing</a
+        >
+      </nav>
+      <button type="button" class="theme-toggle" aria-label="Toggle between light and dark theme">Toggle theme</button>
     </header>
+
     <main>
-      <section id="hero">
-        <div>
-          <p>Electronics</p>
-          <a href="/electronics">Shop now</a>
-        </div>
-        <div>
-          <p>Jewellery</p>
-          <a href="/jewellery">Shop now</a>
-        </div>
-        <div>
-          <p>Clothing</p>
-          <a href="/clothing">Shop now</a>
+      <section class="recommended">
+        <div class="recommended__content">
+          <h1 class="recommended__title">Recommended Products</h1>
+          <div class="product">
+            <div class="product__image-container">
+              <img
+                src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                class="product__image"
+                alt="Navy fold strap backpack with a brown leather logo, fits a 15-inch laptop, Fjallraven Foldsack No. 1"
+              />
+            </div>
+            <h2 class="product__title">Fjallraven - Foldsack Backpack</h2>
+            <p class="product__description">
+              Your perfect pack for everyday use and walks in the forest. Stash
+              your laptop (up to 15 inches) in the padded sleeve, your everyday
+            </p>
+            <p class="product__price">
+              Price: <span class="positive">$109.95</span>
+            </p>
+            <p class="product__rating">Rating: 3.9 (120 reviews)</p>
+          </div>
+          <div class="product">
+            <div class="product__image-container">
+              <img
+                src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+                class="product__image"
+                alt="Men's casual premium slim fit raglan T-shirt with a button-up top and black 3/4 length sleeves"
+              />
+            </div>
+            <h2 class="product__title">Mens Casual Premium Slim Fit T-Shirts</h2>
+            <p class="product__description">
+              Slim-fitting style, contrast raglan long sleeve...
+            </p>
+            <p class="product__price">
+              Price: <span class="positive">$22.3</span>
+            </p>
+            <p class="product__rating">Rating: 4.1 (259 reviews)</p>
+          </div>
+          <div class="product">
+            <div class="product__image-container">
+              <img
+                src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
+                class="product__image"
+                alt="Men's brown cotton jacket with pockets, zip, and poppers, ideal outerwear for Spring, Autumn, and Winter"
+              />
+            </div>
+            <h2 class="product__title">Mens Cotton Jacket</h2>
+            <p class="product__description">
+              Great outerwear jackets for Spring/Autumn/Winter...
+            </p>
+            <p class="product__price">
+              Price: <span class="positive">$55.99</span>
+            </p>
+            <p class="product__rating">Rating: 4.7 (500 reviews)</p>
+          </div>
+          <div class="product">
+            <div class="product__image-container">
+              <img
+                src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
+                class="product__image"
+                alt="Men's casual slim fit full-length navy T-shirt with a V-neck collar"
+              />
+            </div>
+            <h2 class="product__title">Mens Casual Slim Fit</h2>
+            <p class="product__description">
+              The color could be slightly different...
+            </p>
+            <p class="product__price">
+              Price: <span class="positive">$15.99</span>
+            </p>
+            <p class="product__rating">Rating: 2.1 (430 reviews)</p>
+          </div>
+          <div class="product">
+            <div class="product__image-container">
+              <img
+                src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+                class="product__image"
+                alt="Metallic Naga bracelet with a dragon head clasp"
+              />
+            </div>
+            <h2 class="product__title">
+              John Hardy Women's Legends Naga Bracelet
+            </h2>
+            <p class="product__description">
+              From our Legends Collection, the Naga was inspired by the mythical
+              water dragon...
+            </p>
+            <p class="product__price">
+              Price: <span class="positive">$695</span>
+            </p>
+            <p class="product__rating">Rating: 4.6 (400 reviews)</p>
+          </div>
         </div>
       </section>
 
-      <section id="recommended-products">
-        <h1 style="color: darkblue; font-family: Arial">
-          Recommended Products
-        </h1>
-
-        <div class="product">
-          <img
-            src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
-            style="width: 100px"
-            alt=""
-          />
-          <h2 style="font-size: 18px">
-            Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
-          </h2>
-          <p style="font-size: 12px">
-            Your perfect pack for everyday use and walks in the forest. Stash
-            your laptop (up to 15 inches) in the padded sleeve, your everyday
-          </p>
-          <p>Price: <span style="color: green">$109.95</span></p>
-          <p style="font-family: Verdana">Rating: 3.9 (120 reviews)</p>
-        </div>
-
-        <div class="product">
-          <img
-            src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
-            style="width: 200px"
-            alt=""
-          />
-          <h2 style="font-size: 20px; font-family: Georgia">
-            Mens Casual Premium Slim Fit T-Shirts
-          </h2>
-          <p>Slim-fitting style, contrast raglan long sleeve...</p>
-          <p style="color: purple">Price: $22.3</p>
-          <p style="font-size: 14px">Rating: 4.1 (259 reviews)</p>
-        </div>
-
-        <div class="product">
-          <img
-            src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
-            alt="Mens Cotton Jacket"
-          />
-          <h2 style="font-family: 'Times New Roman'">Mens Cotton Jacket</h2>
-          <p style="font-size: 10px">
-            Great outerwear jackets for Spring/Autumn/Winter...
-          </p>
-          <p>Price: $55.99</p>
-          <p style="color: red">Rating: 4.7 (500 reviews)</p>
-        </div>
-
-        <div class="product">
-          <img
-            src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
-            style="width: 150px"
-            alt=""
-          />
-          <h2 style="font-size: 22px; color: orange">Mens Casual Slim Fit</h2>
-          <p style="font-style: italic">
-            The color could be slightly different...
-          </p>
-          <p style="font-size: 16px; color: brown">Price: $15.99</p>
-          <p>Rating: 2.1 (430 reviews)</p>
-        </div>
-
-        <div class="product">
-          <img
-            src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
-            style="width: 250px"
-            alt=""
-          />
-          <h2 style="font-size: 24px; font-weight: bold; color: gold">
-            John Hardy Women's Legends Naga Bracelet
-          </h2>
-          <p style="font-size: 18px">
-            From our Legends Collection, the Naga was inspired by the mythical
-            water dragon...
-          </p>
-          <p style="color: pink">Price: $695</p>
-          <p>Rating: 4.6 (400 reviews)</p>
-        </div>
-      </section>
-
-      <section id="faq" style="background-color: #eee; padding: 20px">
-        <h2 style="font-size: 28px; text-align: center; color: navy">
-          Frequently Asked Questions
-        </h2>
-        <div style="margin: 10px">
-          <h3 style="color: green">1. What is the return policy?</h3>
-          <p style="font-size: 14px; font-family: Arial">
-            We offer a 30-day return policy. Please ensure the item is in its
-            original condition.
-          </p>
-        </div>
-
-        <div style="margin: 15px">
-          <h3 style="color: blue; font-family: Georgia">
-            2. How long does shipping take?
-          </h3>
-          <p>
-            Shipping typically takes 5-7 business days. Expedited options are
-            available at checkout.
-          </p>
-        </div>
-
-        <div style="margin: 5px">
-          <h3 style="font-weight: bold">
-            3. Do you offer international shipping?
-          </h3>
-          <p style="font-style: italic">
-            Yes, we ship internationally. Additional charges may apply.
-          </p>
-        </div>
-
-        <div style="margin: 20px">
-          <h3 style="font-size: 18px">4. Can I track my order?</h3>
-          <p style="font-size: 12px; color: gray">
-            Yes, tracking information will be provided via email once your order
-            is shipped.
-          </p>
-        </div>
-
-        <div style="margin: 8px">
-          <h3 style="color: red">5. How can I contact customer support?</h3>
-          <p>
-            You can reach us at
-            <a href="mailto:support@example.com" style="color: orange"
-              >support@example.com</a
-            >.
-          </p>
+      <section class="faq-container">
+        <div class="faq-container__content">
+          <h2 class="faq-container__title">Frequently Asked Questions</h2>
+          <div class="faq">
+            <h3 class="faq__question">1. What is the return policy?</h3>
+            <p class="faq__answer">
+              We offer a 30-day return policy. Please ensure the item is in its
+              original condition.
+            </p>
+          </div>
+          <div class="faq">
+            <h3 class="faq__question">2. How long does shipping take?</h3>
+            <p class="faq__answer">
+              Shipping typically takes 5-7 business days. Expedited options are
+              available at checkout.
+            </p>
+          </div>
+          <div class="faq">
+            <h3 class="faq__question">3. Do you offer international shipping?</h3>
+            <p class="faq__answer">
+              Yes, we ship internationally. Additional charges may apply.
+            </p>
+          </div>
+          <div class="faq">
+            <h3 class="faq__question">4. Can I track my order?</h3>
+            <p class="faq__answer">
+              Yes, tracking information will be provided via email once your order
+              is shipped.
+            </p>
+          </div>
+          <div class="faq">
+            <h3 class="faq__question">5. How can I contact customer support?</h3>
+            <p class="faq__answer">
+              You can reach us at
+              <a href="mailto:support@example.com" class="faq__link"
+                >support@example.com</a
+              >.
+            </p>
+          </div>
         </div>
       </section>
     </main>

@@ -1,0 +1,49 @@
+// COLOUR
+$background-primary: var(--background-primary);
+$background-secondary: var(--background-secondary);
+$headline: var(--headline);
+$paragraph: var(--paragraph);
+$button: var(--button);
+$button-text: var(--button-text);
+$sub-headline: var(--sub-headline);
+
+// TYPOGRAPHY
+$font-size-base: var(--font-size-base);
+$font-size-large: var(--font-size-large);
+$font-size-xlarge: var(--font-size-xlarge);
+
+// SPACING
+$padding-small: var(--padding-small);
+$padding-base: var(--padding-base);
+$padding-large: var(--padding-large);
+
+$margin-base: var(--margin-base);
+$margin-large: var(--margin-large);
+$margin-xlarge: var(--margin-xlarge);
+
+$border-radius: var(--border-radius);
+
+// CSS VARIABLES
+:root {
+  color-scheme: light dark;
+  --background-primary: light-dark(#fffffe, #16161a);
+  --background-secondary: light-dark(#e3f6f5, #242629);
+  --headline: light-dark(#272343, #fffffe);
+  --paragraph: light-dark(#2d334a, #94a1b2);
+  --button: light-dark(#ffd803, #7f5af0);
+  --button-text: light-dark(#272343, #fffffe);
+
+  --font-size-base: 16px;
+  --font-size-large: 32px;
+  --font-size-xlarge: 48px;
+
+  --padding-small: 8px;
+  --padding-base: 16px;
+  --padding-large: 32px;
+
+  --margin-base: 16px;
+  --margin-large: 32px;
+  --margin-xlarge: 48px;
+
+  --border-radius: 4px;
+}
